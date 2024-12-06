@@ -1,0 +1,6 @@
+<view class="container">
+  <canvas id="lottiejs-canvas" canvas-id="lottiejs-canvas" class="lottiejs-canvas" type="2d"></canvas>
+  <view class="title">XX资讯</view>
+  <view class="button register {{flagRe==1?'biger':''}}" bindtap="registerNow">点击这里注册</view>
+  <view class="button login {{flagLo==1?'biger':''}}" bindtap="loginNow">点击这里登录</view>
+</view>

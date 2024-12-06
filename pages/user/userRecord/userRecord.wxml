@@ -1,0 +1,23 @@
+<scroll-view scroll-y="true" enable-flex="true" class="orderContainer">
+  <view wx:for="{{newsList_All}}" wx:key="index" >
+    <view class="newsForm" bind:tap="tapTocheck" data-currentId="{{item.article_id}}">
+
+      <view class="basicData">
+        <view class="newsTitle">{{item.title}}</view>
+      </view>
+      
+      <view class="pictureGroup" >
+        <view   wx:for="{{item.preview_images}}" wx:key="index" catch:tap="checkImage" data-currentImage="{{item}}">
+          <image src="{{item}}" class="pictureForm" mode="aspectFill"></image>
+        </view>
+      </view>
+      <view class="operationBar">
+        <view style="margin-right: 30rpx;">{{item.post_time}}</view>
+      </view>
+    </view>
+  </view>
+
+
+
+</scroll-view>
+

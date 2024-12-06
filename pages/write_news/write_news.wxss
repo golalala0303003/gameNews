@@ -1,0 +1,72 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff; 
+}
+
+
+.title {
+  margin-bottom: 20px;
+}
+
+.input-title {
+  width: 650rpx;
+  padding: 12px;
+  font-size: 16px;
+  color: #333; 
+  border: 1px solid #ccc;  
+  border-radius: 4px;
+  background-color: #f8f8f8;  
+}
+
+
+.editor-container {
+  margin-bottom: 20px;
+}
+
+.editor {
+  width: 700rpx;
+  height: 800rpx;  
+  padding: 12px;
+  font-size: 16px;
+  color: #333;  
+  border: 1px solid #ccc;  
+  border-radius: 4px;
+  background-color: #f8f8f8;  
+}
+
+
+.insert-image-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.insert-image {
+  color: #000;  
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  background-color: #333;  
+  color: white; 
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+}
+
+
+.submit-btn:hover {
+  background-color: #555;  
+}

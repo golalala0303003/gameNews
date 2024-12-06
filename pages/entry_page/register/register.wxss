@@ -1,0 +1,56 @@
+/* 设置整体背景和字体 */
+.container {
+  padding: 30rpx;
+  background-color: #f8f8f8;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40rpx;
+}
+
+.form {
+  width: 100%;
+  max-width: 600rpx;
+  padding: 20rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  width: 95%;
+  padding: 16rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.input:focus {
+  border-color: #007aff;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16rpx;
+  background-color: #333;  
+  color: white;
+  font-size: 30rpx;
+  border: none;
+  border-radius: 5rpx;
+  cursor: pointer;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: rgb(66, 66, 66);  
+}

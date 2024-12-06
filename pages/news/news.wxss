@@ -1,0 +1,84 @@
+.tabBartop{
+  display: flex;
+  flex-direction: row;
+  justify-content:start;
+}
+.tab{
+  margin-top: 0rpx;
+  margin-left: 20rpx;
+  width:100rpx ;
+  height: 70rpx;
+  font-size: 38rpx;
+}
+.tab_highlight{
+  font-size: 43rpx;
+  font-weight: bold;
+}
+.orderContainer{
+  margin-left: 7rpx;
+  margin-right: 10rpx;
+  height: 1300rpx;
+  background-color: rgb(245, 244, 244);
+}
+.newsForm{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 8rpx;
+  margin-top: 0rpx;
+}
+.basicData{
+  display: flex;
+  flex-direction: column;
+}
+.newsTitle{
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+.pictureGroup{
+  display: flex;
+  flex-direction: row;
+}
+.pictureForm{
+  width: 235rpx;
+  height: 235rpx;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  margin-right: 10rpx;
+}
+.operationBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.operationPicture{
+  width: 45rpx;
+  height: 45rpx;
+  margin-top: 13rpx;
+}
+
+.writeButton{
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+  /*left: 50%;    
+  transform: translateX(-50%); */
+  z-index: 999;
+
+}
+.buttonForm{
+  width: 125rpx;  
+  height: 125rpx; 
+  background-color: black;
+  color: white;
+  border-radius: 45rpx; 
+  font-size: 60rpx; 
+  font-weight: bold;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+.buttonForm:hover{
+  background-color: rgb(31, 29, 29);
+}

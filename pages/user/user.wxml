@@ -1,0 +1,19 @@
+<view class="userinfo">
+  <view class="pictureColumn">
+    <image src="/static/user/e6fbb08fa0ec08fac3ef70d94eee3d6d57fbdadd.jpg" class="user_picture" mode="aspectFill"></image>
+    <view class="user_lv">等级：LV6</view>
+  </view>
+  <view class="infoColumn">
+    <view class="info_text">用户名：{{username}}</view>
+  </view>
+</view>
+
+<view class="functionBar">
+  <view class="fucBar" bind:tap="tapHistory">
+    <view class="fuctext">查看历史发帖记录</view>
+  </view>
+
+  <view class="fucBar" bind:tap="tapHelp">
+    <view class="fuctext">帮助</view>
+  </view>
+</view>

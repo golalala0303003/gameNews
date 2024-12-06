@@ -1,0 +1,23 @@
+<view class="container">
+<form catchsubmit="formSubmit">
+  <!-- 页面标题 -->
+  <view class="title">
+    <input class="input-title" name="title" placeholder="请输入标题" />
+  </view>
+
+  <!-- 富文本编辑器 -->
+  <view class="editor-container">
+    <editor id="editor" class="editor" placeholder="请输入" bindready="editorIsready"></editor>
+  </view>
+
+  <!-- 插入图片按钮 -->
+  <view class="insert-image-container">
+    <text class="insert-image" bindtap="insertImage">点击我插入图片</text>
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class="submit-container">
+    <button class="submit-btn" form-type="submit">发布</button>
+  </view>
+</form>
+</view>

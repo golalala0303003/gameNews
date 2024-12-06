@@ -1,0 +1,58 @@
+.container {
+  
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #3b4c57, #cec0c0);
+
+}
+
+.title {
+  font-size: 80rpx;
+  color: white;
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom: 200rpx;
+}
+
+
+.button {
+  width: 80%;
+  padding: 15px 0;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  font-size: 50rpx;
+  margin-top: 20rpx;
+}
+
+
+.register{
+  background-color: #333;  
+  transition: transform 0.5s ease;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  border: none;
+  width: 300rpx;
+  font-weight: bold;
+}
+.biger{
+  transform: scale(1.2);
+}
+
+
+.login {
+  background-color: #333;  
+  transition:transform 0.5s ease;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  border: none;
+  width: 300rpx;
+  font-weight: bold;
+}
+

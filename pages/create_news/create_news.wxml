@@ -1,0 +1,26 @@
+<view class="tabBartop">
+  <text class="tab {{currentTab=='main'?'tab_highlight':''}}" bindtap="changeTab" data-type="main">正文</text>
+  <text class="tab {{currentTab=='comment'?'tab_highlight':''}}" bindtap="changeTab" data-type="comment">评论</text>
+</view>
+<scroll-view scroll-y="true" enable-flex="true" class="orderContainer">
+  <view wx:if="{{currentTab==='main'}}">
+    <view class="newsTitleText">{{article.title}}</view>
+    <view class="newsCreater">{{article.author}}</view>
+    <view>
+      <rich-text nodes="{{article.article_content}}"></rich-text>
+    </view>
+  </view>
+
+  <view wx:if="{{currentTab==='comment'}}" wx:for="{{comment}}" wx:key="index">
+    <view class="commentForm">
+      <view style="font-size: 30rpx;">{{item.author}}：</view>
+      <view style="font-size: 35rpx;margin-top: 5rpx;">{{item.comment_content}}</view>
+    </view>
+  </view>
+</scroll-view>
+<view class="functionBar">
+<form catchsubmit="formSubmit">
+  <input name="comment" placeholder="请输入文字" class="inputComment"/>
+  <button class="submit-btn" form-type="submit" style="width: 200rpx;height: 95rpx;">评论</button>
+</form>
+</view>

@@ -1,0 +1,7 @@
+<view class="container">
+  <text class="title">注册</text>
+  <form catchsubmit="formSubmit" class="form">
+    <input name="userName" placeholder="请输入您的姓名" class="input" />
+    <button formType="submit" class="submit-btn">点击注册</button>
+  </form>
+</view>

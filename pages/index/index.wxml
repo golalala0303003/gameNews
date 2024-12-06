@@ -1,0 +1,8 @@
+<editor  id="editor" placeholder="请输入" bindready="editorIsready"></editor>
+<text bind:tap="insertImage">点击我插入图片</text>
+<text bind:tap="uploadFiles">点击上传消息</text>
+<view>
+  <rich-text nodes="{{richtext}}"></rich-text>
+</view>
+<text bind:tap="uploadImage">点击上传图片</text>
+<image src="{{imageUrl1}}"></image>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/news/news",
+    "pages/user/user",
+    "pages/index/navigate/navigate",
+    "pages/entry_page/entry_page",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/entry_page/register/register",
+    "pages/create_news/create_news",
+    "pages/write_news/write_news",
+    "pages/user/userRecord/userRecord",
+    "pages/user/help/help"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "selectedIconPath": "/static/资讯.png",
+        "iconPath": "/static/资讯(未选中).png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "selectedIconPath": "/static/用户.png",
+        "iconPath": "/static/用户(未选中).png"
+      }
+    ],
+    "color": "#cdcdcd",
+    "selectedColor": "#2c2c2c"
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "entryPagePath": "pages/entry_page/entry_page"
+}

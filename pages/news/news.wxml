@@ -1,0 +1,36 @@
+<view class="tabBartop">
+  <text class="tab {{currentTab=='interest'?'tab_highlight':''}}" bindtap="changeTab" data-type="interest">推荐</text>
+  <!--<text class="tab {{currentTab=='follow'?'tab_highlight':''}}" bindtap="changeTab" data-type="follow">关注</text>-->
+
+</view>
+<scroll-view scroll-y="true" enable-flex="true" class="orderContainer">
+  
+  <view wx:for="{{newsList_All}}" wx:key="index" wx:if="{{currentTab === 'interest'}}">
+    <view class="newsForm" bind:tap="tapTocheck" data-currentId="{{item.article_id}}">
+
+      <view class="basicData">
+        <view>{{item.author}}</view>
+        <view class="newsTitle">{{item.title}}</view>
+      </view>
+      
+      <view class="pictureGroup" >
+        <view   wx:for="{{item.preview_images}}" wx:key="index" catch:tap="checkImage" data-currentImage="{{item}}">
+          <image src="{{item}}" class="pictureForm" mode="aspectFill"></image>
+        </view>
+      </view>
+      <view class="operationBar">
+        <image src="/static/news/评论.png" class="operationPicture"></image>
+        <view style="margin-top: 25rpx;margin-right: 50rpx;">{{item.comment_count}}</view>
+        <image src="/static/news/点赞.png" class="operationPicture" catch:tap="tapLike" data-curId="{{item.article_id}}"></image>
+        <view style="margin-top: 25rpx;margin-right: 25rpx;">{{item.like}}</view>
+      </view>
+    </view>
+  </view>
+
+
+
+</scroll-view>
+<view class="writeButton" bind:tap="createNews">
+  <view class="buttonForm">+</view>
+</view>
+
